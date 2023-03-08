@@ -1,0 +1,19 @@
+$colore : (
+    colorButton1: #0e6cff,
+    colorButton2: #ff8700,
+    colorButton3: #4caf50,
+);
+
+@each $key, $value in $colore{
+    .bottone-#{$key}{
+        background-color: $value;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 0 3px 10px;
+        &:hover{
+            box-shadow: 0 3px 10px;
+            transform:perspective(200px) translateZ(10px);
+            z-index: 1;
+        }
+    }
+};

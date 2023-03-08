@@ -1,0 +1,11 @@
+@import 'partials/_reset.scss';
+@import 'partials/_color.scss';
+@import 'partials/_font.scss';
+@import 'partials/_space.scss';
+@import 'partials/_button.scss';
+@import 'partials/_mixins-general.scss';
+@import 'partials/_animation.scss';
+
+.flex{
+    @include grid
+}
